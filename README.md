@@ -1,2 +1,2 @@
-CTDT-Mdecicare-Recommender-system
+CTDT-Medicare-Recommender-system
 =================================
