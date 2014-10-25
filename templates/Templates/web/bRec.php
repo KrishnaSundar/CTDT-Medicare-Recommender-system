@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>RecSys</title>
+		<title>bRecSys</title>
 		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<script src="js/jquery.min.js"></script>
 		 <!-- Custom Theme files -->
@@ -22,7 +22,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<body>
 		<!-- container -->
 			<!-- header -->
-			
+			<div id="swagath" class="invisible">
+				<iframe  height="385px" width="100%">
+					Hi this is swagath
+				</iframe>
+			</div>
 			<div class="header header-border">
 				<div class="container">
 					<!-- logo -->
@@ -60,27 +64,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!-- /container -->
 		</div>
+		<div>
+		</div>
 		<!-- about-us -->
 		<div class="about">
 						<div class="container">
 							<div class="about-grids">
 								<div class="col-md-9 about-left">
-									<h1>What We Do</h1>
+									<h1>A Blood Donor Recommender</h1>
 									<p>Recommender Systems (RS) are software tools and techniques that provide suggestions and recommend items to be of use to a user.</p>
-									<p> These tools seek to predict the 'rating' or 'preference' a user would give to an item  or social elements that they had not yet considered using a model built on the characteristics of the item or user interaction environment. Becoming extremely common in recent years, the Recommender Systems can also be incorporated into elements of social importance. It is now one among the emerging topics today where the entire world needs some recommendations in each and every task they perform, thus making it the pivot in internet domain. The suggestions usually relate to various decision-making processes, such as what items to buy, what music to listen to, or what online news to read. RSs are primarily directed towards individuals who lack sufficient personal experience or competence to evaluate the potentially overwhelming number of alternatives available for them in the particular field they are searching. One such element is the area of health care which deserves alarming degree of attention at the moment. </p>
+									<p>These tools seek to predict the 'rating' or 'preference' a user would give to an item  or social elements that they had not yet considered using a model built on the characteristics of the item or user interaction environment. Becoming extremely common in recent years, the Recommender Systems can also be incorporated into elements of social importance. It is now one among the emerging topics today where the entire world needs some recommendations in each and every task they perform, thus making it the pivot in internet domain. The suggestions usually relate to various decision-making processes, such as what items to buy, what music to listen to, or what online news to read. RSs are primarily directed towards individuals who lack sufficient personal experience or competence to evaluate the potentially overwhelming number of alternatives available for them in the particular field they are searching. One such element is the area of health care which deserves alarming degree of attention at the moment. </p>
 									<p>The necessity of recommender systems in medicine seems viable for the future. This project provides a Trust-Enhanced recommender system which recommends its users based on the "Trust score". The data used by this recommender system being proposed here uses three objects Items, Users and Transactions (nothing but the interaction between the user and the system).</p>
 								</div>
 								<div class="col-md-3 about-left">
-									<h2>Latest News</h2>
+									
 									<!-- news-grid -->
 									<div class="news-grid">
-										<img src="images/about-pic.jpg" title="name">
+										<h2>get Recommended</h2>
+										<a class="about-btn" href="#swagath"> Recommend Me </a>
 									</div>
 									<!-- news-grid -->
 									<!-- recent-news -->
-									<div class="recent-posts">
-										<h2>Recent-posts</h2>
-										<!-- recent-post-grids -->
+									
+									<div class="recent-post-grids">
+										<br></br>
+										<div class="r-post-grid">
+										<h2> Wanna Donate? Register</h2>
+										<li> Interested in becoming a Blood Donor? </li>
+										<li> Then, This is right place to become one. Fill in the form and get started </li>
+										<a class="about-btn" href="#"> Register Here! </a>
+										</div>
+									</div>	
+											<!--
 											<div class="recent-post-grids">
 												<div class="r-post-grid">
 													<div class="r-post-grid-left">
@@ -113,8 +128,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 													<div class="clearfix"> </div>
 												</div>
 											</div>
+											-->
 										<!-- recent-post-grids -->
-									</div>
+									
 									<!-- recent-news -->
 								</div>
 							</div>

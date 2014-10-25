@@ -164,6 +164,9 @@ span.menu{
     }
 }
 /*----*/
+.invisible{
+	display: none;
+}
 .callbacks_tabs a{
    visibility: hidden;
 }
@@ -570,11 +573,12 @@ p.copy-right a:hover{
 	font-size:1.5em;
 }
 .about-left p{
-	color: #777;
+	color: #005;
 	line-height: 1.8em;
+	text-align: justify;
 }
 .about-grids{
-	padding:1.5em 0;
+	padding:1.6em 0;
 }
 .about-left ul{
 	margin:0 0 0.8em 3em;
@@ -583,6 +587,7 @@ p.copy-right a:hover{
 .about-left ul li{
 	display:block;
 }
+
 .about-left ul li a{
 	color: #777;
 	text-decoration:none;
@@ -788,7 +793,6 @@ ul.pagenation li a:hover{
 	width:10px;
 	background:url(../images/nav-arrow.png) no-repeat 0px 0px;
 	display:inline-block;
-	vertical-align: middle;
 	margin:0 0.5em;
 }
 /*----*/
