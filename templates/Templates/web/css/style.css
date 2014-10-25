@@ -188,9 +188,9 @@ span.menu{
 	z-index: 999;
 	left: 0%;
 	top: 59%;
-	background: rgba(25, 181, 254, 0.21);
+	background: rgba(5, 5, 4, 0.20);
 	padding: 1em;
-	width: 42%;
+	width: 36%;
 }
 .slider-caption h1{
 	font-weight: 700;
@@ -198,7 +198,7 @@ span.menu{
 	font-size: 4em;
 	margin: 0;
 	padding: 0;
-	color:#FFF;
+	color:#123;
 }
 .slider-caption{
 
@@ -207,7 +207,7 @@ span.menu{
 	color:#2C3E50;
 }
 .slider-caption p{
-	color: #FFF;
+	color: #000;
 	font-weight: 100;
 	font-size: 1em;
 	width: 89%;
@@ -238,7 +238,7 @@ a.caption-btn:hover{
 	padding:3.5em 0;
 }
 .top-grid{
-	border:1px solid #EEE;
+	border:0.1px ;
 	padding:4em 0;
 	transition:border-color 0.5s all;
 }
@@ -278,6 +278,25 @@ a.caption-btn:hover{
 .top-grid span.t-icon4{
 	background-position: -242px 0px;
 }
+a.btn{
+	background:#FFFFFF;
+	padding:1.0em 1.0em;
+	text-transform:uppercase;
+	color:#123;
+	font-weight:700;
+	display:inline-block;
+	margin-top:0em;
+	text-decoration:none;
+	font-size: 0.875em;
+	border-radius:0.75em;
+	-webkit-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	-o-border-radius:0.5em;
+	-ms-border-radius:0.5em;
+}
+a.btn:hover{
+	background:#19b5fe;
+}
 /*-- mid-grids --*/
 .mid-grids {
 	background: #f9ffff;
@@ -292,15 +311,16 @@ a.caption-btn:hover{
 	min-height:500px;
 }
 .mid-grid-right h2{
-	color: #2C3E50;
+	color: #000000;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0em 0 0.5em;
 	font-weight: 900;
 }
-.mid-grid-right p{
-	color: #777;
+.mid-grid-right li{
+	color: #000;
+	font: 18px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.8em;
 	width:90%;
 }
