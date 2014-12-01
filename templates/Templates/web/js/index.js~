@@ -1,18 +1,12 @@
-// Login/Register form
-// Author: Ian Pirro 
-//------------------------------------
 // Form will change from login to register and visa-versa based
 // on if the user is already "registered"
 // "Usernames" min-len is 5 chars
-//
-// Could be annoying... but fun anyways
-
 
 // These users "already exist"
 var users = [
-{ name: 'ianpirro' },
-{ name: 'joeschmoe' },
-{ name: 'superdev' }
+{ name: 'swagath' },
+{ name: 'krishna' },
+{ name: 'prasanna' }
 ]
 
 var loginform = {
@@ -54,6 +48,7 @@ var loginform = {
     var $html = $("div.login-wrap").addClass('register');
     $html.children('h2').html('Register');
     $html.find(".form input[name='pw']").after("<input type='password' placeholder='Re-type password' name='rpw' />");
+    // add the extra fields for the form inplace here
     $html.find('button').html('Sign up');
     $html.find('a p').html('Have an account? Sign in');
   },
@@ -62,6 +57,7 @@ var loginform = {
     $html.children('h2').html('Login');
     $html.find(".form input[name='rpw']").remove();
     $html.find('button').html('Sign in');
+    $html.find('button').html('Sign in as Admin');
     $html.find('a p').html("Don't have an account? Register");
   },
   submitForm: function(){
@@ -70,10 +66,8 @@ var loginform = {
   
 } // loginform {}
 
-
 // Init login form
 loginform.init();
-
 
 // vertical align box   
 (function(elem){ 
@@ -82,5 +76,4 @@ loginform.init();
 
 $(window).resize(function(){
     $(".login-wrap").css("margin-top", Math.floor( ( $(window).height() / 2 ) - ( $(".login-wrap").height() / 2 ) ) );
-  
 });

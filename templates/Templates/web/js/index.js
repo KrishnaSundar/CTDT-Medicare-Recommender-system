@@ -49,15 +49,18 @@ var loginform = {
     $html.children('h2').html('Register');
     $html.find(".form input[name='pw']").after("<input type='password' placeholder='Re-type password' name='rpw' />");
     // add the extra fields for the form inplace here
-    $html.find('button').html('Sign up');
+    $html.find("button[name='nsignin']").html('Sign up');
+    $html.find("button[name='asignin']").hide();
+    //$html.find("button[name='asignin']").html('Sign up as Admin');
     $html.find('a p').html('Have an account? Sign in');
   },
   revertForm: function() {
     var $html = $("div.login-wrap").removeClass('register');
     $html.children('h2').html('Login');
     $html.find(".form input[name='rpw']").remove();
-    $html.find('button').html('Sign in');
-    $html.find('button').html('Sign in as Admin');
+    $html.find("button[name='nsignin']").html('Sign in');
+    $html.find("button[name='asignin']").show();
+    //$html.find("button[name='asignin']").html('Sign in as Admin');
     $html.find('a p').html("Don't have an account? Register");
   },
   submitForm: function(){
@@ -66,10 +69,8 @@ var loginform = {
   
 } // loginform {}
 
-
 // Init login form
 loginform.init();
-
 
 // vertical align box   
 (function(elem){ 
@@ -78,5 +79,4 @@ loginform.init();
 
 $(window).resize(function(){
     $(".login-wrap").css("margin-top", Math.floor( ( $(window).height() / 2 ) - ( $(".login-wrap").height() / 2 ) ) );
-  
 });
