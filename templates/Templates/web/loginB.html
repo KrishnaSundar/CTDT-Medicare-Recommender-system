@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <form action="process.php" method="post">
+  <form action="process.php" methos="post">
   <div class="login-wrap">
     <h2>Login</h2>
     <div class="form">
@@ -21,7 +21,7 @@
       <button type="submit" name="nsignin">Sign in</button> 
       <br>
       <button type="submit" name="asignin">Sign in as Admin</button>
-      <a href="#"> <p> Don't have an account? Register </p></a>
+      <a href="#"> <p id="clk" onclick="loginform.switchForm()"> Don't have an account? Register </p></a>
     </div>
   </div>
   </form>
@@ -29,7 +29,35 @@
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 
   <script src="js/index.js"></script>
-
+  
+  <!-- commenting ajax call to server and retrieving 
+       using processing by json for future efficient 
+       workflow
+  <script> 
+    $(document).ready(function() {
+      $("#").click(function () {
+          var username = $('.form input[id=un]').val(); 
+          var password = $('.form input[id=pw]').val();
+          $.ajax({
+          type: "POST",
+          url: "process.php",
+          data : "username="+username+"&password="+password,
+          dataType: "json",
+          success: function ( data ) {
+            var success = data['success'];
+            if(success == false) { 
+              var error = data['message'];
+              alert(error);
+            }
+            else {
+              // update the web page according to the json
+            }
+          }
+        });//end ajax
+      });
+    });
+  </script>
+  -->
 </body>
 
 </html>
